@@ -7,6 +7,10 @@ services:
     environment:
       # Organization to serve: points content_zso_specific_public -> ZSO/<ORG>
       - ORG=${ORG:-Generic}
+      - PASSWORD_ADMIN=${PASSWORD_ADMIN:-ZSO1234}
+      - PASSWORD_OFFIZIER=${PASSWORD_OFFIZIER:-ZSO1234}
+      - PASSWORD_UNTEROFFIZIER=${PASSWORD_UNTEROFFIZIER:-ZSO1234}
+      - PASSWORD_SOLDAT=${PASSWORD_SOLDAT:-ZSO1234}
     volumes:
       - ./data:/app/data:z
     restart: unless-stopped

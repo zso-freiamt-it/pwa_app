@@ -16,4 +16,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-CMD ["npm", "start", "--", "Freiamt"]
+CMD npm start -- $ORG
